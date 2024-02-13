@@ -1,12 +1,12 @@
 from django.db import models
-from .models import Produit, Client
+
 
 # Create your models here.
 
 
 #Le Produit
-
 class Produit(models.Model):
+    code_produit = models.CharField(max_length=20, primary_key=True)
     nom = models.CharField(max_length=100)
     description = models.TextField()
     prix = models.DecimalField(max_digits=10, decimal_places=2)
@@ -16,11 +16,23 @@ class Produit(models.Model):
         return self.nom
 
 
+
+#Client
+class Client(models.Model):
+    nom = models.CharField(max_length=100)
+    email = models.EmailField(unique=True)
+    adresse = models.TextField()
+    # Ajoutez d'autres champs selon les besoins (par exemple, numéro de téléphone, etc.)
+
+    def __str__(self):
+        return self.nom
+
+
 #Commmande
 
 class Commande(models.Model):
     client = models.ForeignKey(Client, on_delete=models.CASCADE)
-    #produits = models.ManyToManyField(Produit, through='LigneCommande')
+    produits = models.ManyToManyField(Produit)
     date_commande = models.DateTimeField(auto_now_add=True)
     # Ajoutez d'autres champs selon les besoins (par exemple, statut de la commande, adresse de livraison, etc.)
 
@@ -30,11 +42,4 @@ class Commande(models.Model):
 
 
 
-class Client(models.Model):
-    nom = models.CharField(max_length=100)
-    email = models.EmailField(unique=True)
-    adresse = models.TextField()
-    # Ajoutez d'autres champs selon les besoins (par exemple, numéro de téléphone, etc.)
 
-    def __str__(self):
-        return self.nom
