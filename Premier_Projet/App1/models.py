@@ -20,7 +20,7 @@ class Produit(models.Model):
 
 class Commande(models.Model):
     client = models.ForeignKey(Client, on_delete=models.CASCADE)
-    produits = models.ManyToManyField(Produit, through='LigneCommande')
+    #produits = models.ManyToManyField(Produit, through='LigneCommande')
     date_commande = models.DateTimeField(auto_now_add=True)
     # Ajoutez d'autres champs selon les besoins (par exemple, statut de la commande, adresse de livraison, etc.)
 
