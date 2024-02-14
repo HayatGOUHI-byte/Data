@@ -6,7 +6,8 @@ from .models import Client
 
 
 def index(request):
-	return HttpResponse("hello my cousin")
+	clients = Client.objects.all()
+    return render(request, 'client.html', {'client': clients})
 
 
 
