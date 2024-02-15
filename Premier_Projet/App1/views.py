@@ -10,7 +10,8 @@ def index(request):
 
 
 
-
+def fu(request):
+    return HttpResponse("welcome to this website")
 
 
 
