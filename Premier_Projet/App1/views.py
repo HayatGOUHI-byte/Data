@@ -10,8 +10,7 @@ def index(request):
 
 
 
-def indexx(request):
-    return HttpResponse("welcome")
+
 
 
 
