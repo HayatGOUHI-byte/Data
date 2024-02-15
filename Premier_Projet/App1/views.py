@@ -10,6 +10,11 @@ def index(request):
 
 
 
+def indexx(request):
+    return HttpResponse("welcome")
+
+
+
 
 
 #afficher tous les clients de la base de données
