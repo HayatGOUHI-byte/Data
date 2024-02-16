@@ -16,7 +16,8 @@ def fu(request):
 def display(request):
     return HttpResponse("welcome to this website")
 
-
+def display(request):
+    return HttpResponse("thank you for joining us")
 
 #afficher tous les clients de la base de données
 def list_clients(request):
