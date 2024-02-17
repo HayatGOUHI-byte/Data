@@ -8,7 +8,7 @@
     <h1>Liste des clients</h1>
     <ul>
         {% for client in clients %}
-            <li><a href="{% url 'client_detail' client.id %}">{{ client.nom }}</a></li>
+            <li><a href="{% url 'client_detail'  %}">{{ client.nom }}</a></li>
         {% endfor %}
     </ul>
 </body>
