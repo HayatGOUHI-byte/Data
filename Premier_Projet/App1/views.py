@@ -9,16 +9,6 @@ def index(request):
 	return HttpResponse("welcome back")
 
 
-
-def fu(request):
-    return HttpResponse("welcome to this website")
-
-def display(request):
-    return HttpResponse("welcome to this website")
-
-def display(request):
-    return HttpResponse("thank you for joining us")
-
 #afficher tous les clients de la base de données
 def list_clients(request):
     clients = Client.objects.all()
@@ -67,4 +57,12 @@ def delete_client(request, client_id):
     if request.method == 'POST':
         client.delete()
         return redirect('list_clients')
-    return render(request, 'delete_client_confirmation.html', {'client': client}) 
+    return render(request, 'delete_client_confirmation.html', {'client': client})
+
+
+
+
+
+def all_voiture(request):
+    voitures = Voiture.objects.all()
+    return render(request,'all_voitures.html', {'voitures': voitures})

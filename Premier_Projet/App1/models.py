@@ -40,6 +40,17 @@ class Commande(models.Model):
         return f"Commande de {self.client} le {self.date_commande}"
 
 
+class Voiture(models.Model):
+    marque = models.CharField(max_length=100)
+    annee_fabrication = models.DateTimeField()
+
+
+
+
+    def __str__(self):
+        return f"voiture {self.marque}"
+
+
 
 
 
