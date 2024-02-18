@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Liste des voitures</title>
+</head>
+<body>
+    <h1>Liste des voitures</h1>
+    <ul>
+        {% for voiture in voitures %}
+            <li><a href="{% url 'client_detail' voiture.id %}">{{ voiture.marque }}</a></li>
+            thank you for joining us here today we can have a conversation if you want that ..
+        {% endfor %}
+    </ul>
+    hank you for joining us here today we can have a conversation if you want that ..
+    hank you for joining us here today we can have a conversation if you want that ..
+</body>
+</html>

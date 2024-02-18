@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from django.http import HttpResponse
 from .models import Client
+from .models import Voiture
 
 
 
@@ -36,6 +37,16 @@ def create_client(request):
 
 #mettre à jour des détails d'un client
 
+
+def create_voiture(request):
+    if request.method == 'POST':
+        form = VoitureForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('all_voiture')
+    else:
+        form = VoitureForm()
+    return render(request, 'create_voiture.html', {'form': form})
 
 def update_client(request, client_id):
     client = get_object_or_404(Client, id=client_id)
