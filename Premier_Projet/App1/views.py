@@ -2,7 +2,8 @@ from django.shortcuts import render, redirect, get_object_or_404
 from django.http import HttpResponse
 from .models import Client
 from .models import Voiture
-
+from django import forms
+from django.forms import ModelForm
 
 
 
@@ -77,3 +78,13 @@ def delete_client(request, client_id):
 def all_voiture(request):
     voitures = Voiture.objects.all()
     return render(request,'all_voitures.html', {'voitures': voitures})
+
+
+def delete_voiture(request):
+        return HttpResponse("hello")
+
+
+
+def all_Data(request):
+    voitures = Voiture.objects.all()
+    return render(request,'all_Data.html', {'voitures': voitures})
