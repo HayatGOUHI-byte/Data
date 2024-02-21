@@ -40,7 +40,7 @@ def create_client(request):
 
 
 def create_voiture(request):
-    if request.method == 'POST':
+    if request.method == "POST":
         form = VoitureForm(request.POST)
         if form.is_valid():
             form.save()
