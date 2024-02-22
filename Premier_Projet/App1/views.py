@@ -88,3 +88,8 @@ def delete_voiture(request):
 def all_Data(request):
     voitures = Voiture.objects.all()
     return render(request,'all_Data.html', {'voitures': voitures})
+
+
+def all_Data(request):
+    voitures = Voiture.objects.all()
+    return render(request,'all_Data.html', {'voitures': voitures})
