@@ -4,6 +4,9 @@ from .models import Client
 from .models import Voiture
 from django import forms
 from django.forms import ModelForm
+from .forms import VoitureForm
+from .forms import ClientForm
+
 
 
 
