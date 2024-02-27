@@ -87,6 +87,11 @@ def delete_voiture(request):
         return HttpResponse("hello")
 
 
+def delete_voiture(request):
+        li = ['Produit1','produit2','sales1','sales45']
+        return HttpResponse("hey")
+
+
 
 
 
