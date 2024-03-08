@@ -9,3 +9,8 @@ def index(request):
 	
 
 
+
+def reconna(request):
+	return HttpRequest("django pages here")
+
+
