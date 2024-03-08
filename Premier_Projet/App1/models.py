@@ -20,8 +20,6 @@ class Author(models.Model):
 		return self.name
 
 
-	def __str__(slef):
-		return self.full_name
 
 class Entry(models.Model):
 	blog = models.ForeignKey(Blog, on_delete=models.CASCADE)
@@ -61,6 +59,9 @@ class Article(models.Model):
 class Book(models.Model):
 	title = models.CharField(max_length=100)
 	authors = models.ManyToManyField(Author)
+
+	def __str__(self):
+		return self.title
 
    
 
