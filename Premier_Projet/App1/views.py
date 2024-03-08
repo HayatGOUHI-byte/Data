@@ -13,4 +13,10 @@ def index(request):
 def reconna(request):
 	return HttpRequest("django pages here")
 
+def search(request):
+	if request.method == "POST":
+		return HttpResponse("C est une methode post {}".fomat(request.method))
+	else:
+		return HttpResponse("c est une methode get {}".format(request.method))
+
 
