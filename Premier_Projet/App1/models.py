@@ -63,6 +63,14 @@ class Book(models.Model):
 	def __str__(self):
 		return self.title
 
+
+
+class Title(models.Model):
+	titre = models.CHarField(max_length=200)
+
+	def __str__(self):
+		return self.titre
+
    
 
 
