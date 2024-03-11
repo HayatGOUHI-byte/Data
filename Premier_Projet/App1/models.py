@@ -72,8 +72,11 @@ class Title(models.Model):
 		return self.titre
 
 
-class Dispaly(request):
-	return HttpResponse('c est une réponse SQL 200')
+class Marchandise(request):
+	titre= models.CharField(max_length=200)
+
+	def __str__(self):
+		return self.titre
 
    
 
