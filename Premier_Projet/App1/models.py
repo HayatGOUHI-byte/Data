@@ -71,6 +71,10 @@ class Title(models.Model):
 	def __str__(self):
 		return self.titre
 
+
+class Dispaly(request):
+	return HttpResponse('c est une réponse SQL 200')
+
    
 
 
