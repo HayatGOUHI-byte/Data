@@ -78,6 +78,10 @@ class Marchandise(request):
 	def __str__(self):
 		return self.titre
 
+
+class voiture(request):
+	brand=models.CharField(max_length=300)
+
    
 
 
