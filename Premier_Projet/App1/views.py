@@ -15,7 +15,7 @@ def reconna(request):
 
 def search(request):
 	if request.method == "POST":
-		return HttpResponse("C est une methode post {}".fomat(request.method))
+		return HttpResponse("C est une methode post {}".format(request.method))
 	else:
 		return HttpResponse("c est une methode get {}".format(request.method))
 
