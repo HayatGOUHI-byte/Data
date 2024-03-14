@@ -72,14 +72,14 @@ class Title(models.Model):
 		return self.titre
 
 
-class Marchandise(request):
+class Marchandise(models.Model):
 	titre= models.CharField(max_length=200)
 
 	def __str__(self):
 		return self.titre
 
 
-class voiture(request):
+class voiture(models.Model):
 	brand=models.CharField(max_length=300)
 
 
