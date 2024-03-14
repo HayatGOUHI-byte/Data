@@ -66,7 +66,7 @@ class Book(models.Model):
 
 
 class Title(models.Model):
-	titre = models.CHarField(max_length=200)
+	titre = models.CharField(max_length=200)
 
 	def __str__(self):
 		return self.titre
@@ -81,6 +81,9 @@ class Marchandise(request):
 
 class voiture(request):
 	brand=models.CharField(max_length=300)
+
+
+
 
    
 
