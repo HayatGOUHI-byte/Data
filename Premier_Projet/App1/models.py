@@ -19,6 +19,12 @@ class Choice(models.Model):
 
 
 
+class Answer(models.Model):
+	phrase = models.ForeignKey(Question, on_delete=models.CASCADE)
+	
+
+
+
 
 
 
