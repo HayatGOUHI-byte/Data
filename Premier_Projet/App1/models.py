@@ -22,6 +22,7 @@ class Choice(models.Model):
 class Answer(models.Model):
 	phrase = models.ForeignKey(Question, on_delete=models.CASCADE)
 	phrase2=models.ForeignKey(Question, on_delete=models.CASCADE)
+	conclusion = models.PrimaryKey
 
 
 
