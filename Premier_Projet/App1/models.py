@@ -25,6 +25,10 @@ class Answer(models.Model):
 	conclusion = models.PrimaryKey
 
 
+class Reponse(models.Model):
+	re=models.ForeignKey()
+
+
 
 
 
