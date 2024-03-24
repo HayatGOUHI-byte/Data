@@ -27,6 +27,7 @@ class Answer(models.Model):
 
 class Reponse(models.Model):
 	re=models.ForeignKey()
+	ans=models.ForeignKey()
 
 
 
