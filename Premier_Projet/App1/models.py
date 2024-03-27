@@ -26,7 +26,7 @@ class Answer(models.Model):
 
 
 class Reponse(models.Model):
-	return HttpResponse('the lasat changes to this topic')
+	return HttpResponse("it s a file to do ")
 
 
 
