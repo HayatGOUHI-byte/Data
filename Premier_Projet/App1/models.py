@@ -26,8 +26,7 @@ class Answer(models.Model):
 
 
 class Reponse(models.Model):
-	re=models.ForeignKey()
-	ans=models.ForeignKey()
+	return HttpResponse('the lasat changes to this topic')
 
 
 
