@@ -26,7 +26,7 @@ class Answer(models.Model):
 
 
 class Reponse(models.Model):
-	return HttpResponse("it s a file to do ")
+	return HttpResponse("these are changes to this file")
 
 
 
