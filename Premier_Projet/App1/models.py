@@ -35,7 +35,8 @@ class Question(models.Model):
 class Reponse(models.Model):
 	return HttpResponse("liste of users")
 
-
+class Reponse(models.Model):
+	return HttpResponse("liste of users")
 
 
 
