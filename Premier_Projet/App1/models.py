@@ -39,6 +39,10 @@ class Reponse(models.Model):
 	return HttpResponse("liste of users")
 
 
+class Reponse2(models.Model):
+	return HttpResponse("mise A jour de ce point")
+
+
 
 
    
