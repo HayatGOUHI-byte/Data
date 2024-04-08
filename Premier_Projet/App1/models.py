@@ -45,6 +45,12 @@ class Reponse2(models.Model):
 
 
 
+class ReponseMail(models.Model):
+	return HttpResponse("update to this email")
+
+
+
+
    
 
 
