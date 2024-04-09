@@ -50,6 +50,11 @@ class ReponseMail(models.Model):
 
 
 
+class ReponseMail(models.Model):
+	return HttpResponse("updates")
+
+
+
 
    
 
