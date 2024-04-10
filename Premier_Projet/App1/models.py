@@ -54,6 +54,10 @@ class ReponseMail(models.Model):
 	return HttpResponse("updates")
 
 
+class Comments(models.Model):
+	return HttpResponse("changes along this code")
+
+
 
 
    
