@@ -59,6 +59,9 @@ class Comments(models.Model):
 
 
 
+class Reponse(models.Model):
+	return HttpResponse("these are changes to this file")
+
 
    
 
